@@ -7,6 +7,7 @@ Välkommen till NextWatch! Det här är min film-app som jag byggt med React. Ta
 För att testa projektet på din egen dator gör du så här:
 
 1.  **Hämta hem allt:**
+    git clone https://github.com/amir0321/Nextwatch.git
     Öppna terminalen i mappen och skriv:
     ```bash
     npm install
@@ -48,7 +49,7 @@ Jag använde `react-router-dom` för att det är standard för React. Jag byggde
 Jag ville undvika jättelånga filer där man tappar bort sig. Så jag försökte stycka upp det. Till exempel gjorde jag en egen komponent `MoviesStatus` för att hantera laddning och felmeddelanden. Sidorna (som `Home`) funkar lite som "chefer" – de hämtar datan och skickar den vidare ner till de mindre komponenterna som bara visar upp den. Det gör det lättare att ändra utseendet på en knapp utan att råka paja logiken för datahämtning.
 
 ### Props-lösning
-Jag använder props för att skicka data nedåt i trädet. Till exempel skickar `Home` listan med filmer till karusellen. Det är ett enkelt sätt att se till att komponenterna har det de behöver. Det gör också att mina presentations-komponenter blir ganska "dumma" och enkla – de tar bara emot data och ritar ut den, vilket gör dem lätta att flytta runt eller återanvända.
+Jag använder props för att skicka data nedåt i trädet. Till exempel skickar `Home` listan med filmer till karusellen. Det är ett enkelt sätt att se till att komponenterna har det de behöver. Det gör också att mina presentations-komponenter blir ganska enkla – de tar bara emot data och ritar ut den, vilket gör dem lätta att flytta runt eller återanvända.
 
 ### State-lösning
 Jag använder Reacts inbyggda `useState` och `useEffect`.
